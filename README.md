@@ -1,5 +1,5 @@
 # BinaryStars
-[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD 3-Clause-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: New BSD](https://img.shields.io/badge/License-NewBSD-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 An efficient Python implementation for the Bayesian inference in binary stars based on the probabilistic programming language [Stan](https://mc-stan.org/).
 
