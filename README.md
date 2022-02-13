@@ -12,14 +12,13 @@ This repository includes the implementation of the statistical models for differ
 - SB2 model (`sb2.stan`).
 - Visual-SB2 model (`visual_sb2.stan`).
 - Visual-SB1 model (`visual_sb1.stan`).
-- Visual-SB1 model with Gaussian priors (`visual_sb1_priors.stan`).
 
 ## Requirements
 * [CmdStanPy](https://mc-stan.org/cmdstanpy/).
 * [Python 3](https://www.python.org/).
 
 ## Usage
-See the Jupyter Notebooks in the `example` folder for use.
+See the `examples/Visual_SB2.ipynb` notebook for the instructions usage. To incorporate prior distributions see the `examples/Visual_SB1_priors.ipynb` notebook example.
 
 ## References
 [1]  Videla, M., Mendez, R. A., Claveria, R. M., Silva, J. F., & Orchard, M. E. (in prep). **Bayesian inference in single-line spectroscopic binaries with a visual orbit**.
