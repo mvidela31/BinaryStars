@@ -1,6 +1,14 @@
+import re
 import numpy as np
 import pandas as pd
 
+
+def update_namespace(filepath, namespace):
+    file = open(filepath, 'r').read()
+    file = re.sub(r'\S*_model_namespace', namespace + '_model_namespace', file)
+    with open(filepath, 'w') as f:
+        f.write(file)
+    
 
 def pol2cart(rho, phi):
     x = rho * np.cos(phi)

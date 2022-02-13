@@ -2,7 +2,7 @@
 #include <ostream>
 #include <stan/math/rev/core.hpp>
 
-namespace visual_sb1_priors_model_namespace {
+namespace default_model_namespace {
 
 	using namespace stan::math;
 
