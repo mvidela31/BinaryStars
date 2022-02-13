@@ -1,7 +1,7 @@
 # BinaryStars
 [![License: New BSD](https://img.shields.io/badge/License-NewBSD-yellow.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-An efficient Python implementation for the Bayesian inference in binary stars based on the probabilistic programming language [Stan](https://mc-stan.org/).
+An efficient Python implementation for Bayesian inference in binary stars based on the probabilistic programming language [Stan](https://mc-stan.org/).
 
 ![alt text](https://github.com/mvidela31/BinaryStars/blob/main/examples/results/HIP109951_observations_plot.png)
 ![alt text](https://github.com/mvidela31/BinaryStars/blob/main/examples/results/HIP109951_params_plot.png)
