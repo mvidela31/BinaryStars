@@ -3,7 +3,7 @@ functions {
     vector[] orbit(int N, vector t, real T, real P, real e, real a, real w, real Omega, real i) {
         // Variables declaration
         real M; real A; real B; real F; real G;
-        vector[N_as] E; vector[N_as] x; vector[N_as] y; vector[N_as] pos[2];
+        vector[N] E; vector[N] x; vector[N] y; vector[N] pos[2];
         // Iterate over epochs
         for (j in 1:N) {
             // Mean anomaly
@@ -26,7 +26,7 @@ functions {
     }
     vector radial_velocity(int N, vector t, real T, real P, real e, real a, real w, real i, real V0, real alpha) {
         // Variables declaration
-        real M; real K; vector[N_as] E; vector[N_as] nu; vector[N_as] V;
+        real M; real K; vector[N] E; vector[N] nu; vector[N] V;
         real convCoeff = 149597870.660 / (365.25 * 86400.0); 
         // Iterate over epochs
         for (j in 1:N) {
