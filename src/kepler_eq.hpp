@@ -7,21 +7,19 @@ namespace default_model_namespace {
 	using namespace stan::math;
 
 	inline double kepler_eq(double M, double e, std::ostream* pstream) {
-		double E0 = M;
-		double E = M;
-		double g, gp;
-		for (int i = 0; i < 200; ++i) {
-			g = E0 - e * sin(E0) - M;
-			gp = 1.0 - e * cos(E0);
-			E = E0 - g / gp;
+		double E, En;
+		E = M;
+		for (int n = 0; n < 200; ++n) {
+			// Newton's method iteration
+			En = E - (E - e * sin(E) - M) / (1.0 - e * cos(E));
 			// Convergence check
-			if (fabs((E - E0) / E) <= 1.234e-10) {
-				return E;
+			if (fabs((En - E) / En) <= 1.234e-10) {
+				return En;
 			}
-			E0 = E;
+			E = En;
 		}
 		// Return the best estimate despite non-convergence
-		return E;
+		return En;
 	}
 
 	inline var kepler_eq(const var& M_var, const var& e_var, std::ostream* pstream) {
