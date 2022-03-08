@@ -7,8 +7,8 @@ namespace default_model_namespace {
 	using namespace stan::math;
 
 	inline double kepler_eq(double M, double e, std::ostream* pstream) {
-		double E, En;
-		E = M;
+		double En;
+		double E = M;
 		for (int n = 0; n < 200; ++n) {
 			// Newton's method iteration
 			En = E - (E - e * sin(E) - M) / (1.0 - e * cos(E));
