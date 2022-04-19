@@ -21,7 +21,7 @@ This repository includes the implementation of the statistical models for differ
 See the `examples/Visual_SB2.ipynb` notebook for the instructions usage. To incorporate prior distributions see the `examples/Visual_SB1_priors.ipynb` notebook example.
 
 ## References
-[1]  Videla, M., Mendez, R. A., Claveria, R. M., Silva, J. F., & Orchard, M. E. (in prep). **Bayesian inference in single-line spectroscopic binaries with a visual orbit**.
+[[1](https://iopscience.iop.org/article/10.3847/1538-3881/ac5ab4)]  Videla, M., Mendez, R. A., Claveria, R. M., Silva, J. F., & Orchard, M. E. (2022). **Bayesian inference in single-line spectroscopic binaries with a visual orbit**.  *The Astronomical Journal*, 163(5).
 
 [[2](https://www.osti.gov/biblio/1430202)] Carpenter, B., Gelman, A., Hoffman, M. D., Lee, D., Goodrich, B., Betancourt, M., ... & Riddell, A. (2017). **Stan: A probabilistic programming language**. *Journal of statistical software*, 76(1).
 
